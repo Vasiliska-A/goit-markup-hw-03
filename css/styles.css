@@ -1,0 +1,286 @@
+:root {
+  --interactive-color: #2196f3;
+  --logo-color: #000000;
+  --headers-color: #212121;
+  --text-color: #757575;
+  --white-text-background-color: rgba(255, 255, 255, 1);
+  --white-text-color-06: rgba(255, 255, 255, 0.6);
+  --sections-background-color: #e5e5e5;
+  --section-team-background-color: #f5f4fa;
+  --border-color: rgba(238, 238, 238, 1);
+}
+
+/* Загальні стилі для боді і списків */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Заховати заголовок */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .header {
+  background-color: var(--white-text-background-color);
+} */
+
+/* логотип компанії */
+.logo {
+  color: var(--logo-color);
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+.logo:focus {
+  color: var(--interactive-color);
+}
+
+.logo-part {
+  color: var(--interactive-color);
+}
+
+/* Навігація сайту */
+.nav-list .link {
+  color: var(--headers-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--interactive-color);
+}
+
+.nav-list .link.current {
+  color: var(--interactive-color);
+}
+
+/* контактна інфо */
+.contacts-list .link {
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--interactive-color);
+}
+
+/* section Hero */
+.hero-title {
+  color: var(--white-text-background-color);
+  background-color: #2f303a;
+  font-family: inherit;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.hero-link {
+  color: var(--white-text-background-color);
+  background-color: var(--interactive-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--headers-color);
+}
+
+/* section features
+.features,
+.examles {
+  background-color: var(--sections-background-color);
+} */
+
+.item-title {
+  color: var(--headers-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.item-text {
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.examples-title {
+  color: var(--headers-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.team-section {
+  background-color: var(--sections-background-color);
+}
+
+.team-section-title {
+  color: var(--headers-color);
+  background-color: var(--section-team-background-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.section-list-title {
+  color: var(--headers-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.section-list-text {
+  color: var(--text-colorcolor);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  color: var(--white-text-background-color);
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+.footer-logo:focus {
+  color: var(--interactive-color);
+}
+
+.logo-part {
+  color: var(--interactive-color);
+}
+
+.address-text {
+  color: var(--white-text-background-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contacts-list-item {
+  color: var(--white-text-color-06);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contacts-list-item:hover,
+.contacts-list-item:focus {
+  color: var(--interactive-color);
+}
+
+/* Стилі портфоліо */
+.btn {
+  background-color: var(--section-team-background-color);
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--interactive-color);
+}
+
+.project-item {
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: 1px;
+}
+
+.project-title {
+  color: var(--headers-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.project-type {
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
