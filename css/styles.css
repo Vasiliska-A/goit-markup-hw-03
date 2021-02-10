@@ -34,12 +34,40 @@ ul {
   overflow: hidden;
 }
 
+/* Стилі контейнера */
+
+.container {
+  outline: 2px solid tomato;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.nav-list,
+.contacts-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.contacts-list {
+  margin-left: auto;
+}
+
 /* .header {
   background-color: var(--white-text-background-color);
 } */
 
 /* логотип компанії */
 .logo {
+  outline: 2px solid black;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
   color: var(--logo-color);
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
@@ -59,6 +87,11 @@ ul {
 
 /* Навігація сайту */
 .nav-list .link {
+  outline: 2px solid violet;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--headers-color);
   background-color: var(--white-text-background-color);
   font-family: inherit;
@@ -80,6 +113,11 @@ ul {
 
 /* контактна інфо */
 .contacts-list .link {
+  outline: 2px solid yellow;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--text-color);
   background-color: var(--white-text-background-color);
   font-family: inherit;
@@ -93,6 +131,30 @@ ul {
 .contacts-list .link:hover,
 .contacts-list .link:focus {
   color: var(--interactive-color);
+}
+
+.contacts-list .item + .item {
+  margin-left: 50px;
+}
+
+.main-nav,
+.site-nav,
+.nav-list,
+.contacts-list {
+  display: flex;
+}
+
+.main-nav {
+  align-items: center;
+}
+
+.nav-item,
+.contacts-item {
+  display: block;
+}
+
+.nav-list > .nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* section Hero */
@@ -226,7 +288,8 @@ ul {
   line-height: 1.7;
 }
 
-.contacts-list-item {
+.contacts-list .item {
+  margin-right: auto;
   color: var(--white-text-color-06);
   font-family: inherit;
   text-decoration: none;
