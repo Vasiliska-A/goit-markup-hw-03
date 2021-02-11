@@ -160,7 +160,22 @@ ul {
 
 /* section Hero */
 
+.hero-title,
+.hero-link {
+  margin: 0;
+}
+
+.hero-section {
+  text-align: center;
+}
+
 .hero-title {
+  outline: 5px solid yellowgreen;
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
   color: var(--white-text-background-color);
   background-color: #2f303a;
   font-family: inherit;
@@ -169,9 +184,17 @@ ul {
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-link {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+
+  border: 1px solid transparent;
+
   color: var(--white-text-background-color);
   background-color: var(--interactive-color);
   font-family: inherit;
@@ -180,6 +203,7 @@ ul {
   font-style: normal;
   font-size: 16px;
   line-height: 1.88;
+  text-align: center;
 }
 
 .hero-link:hover,
