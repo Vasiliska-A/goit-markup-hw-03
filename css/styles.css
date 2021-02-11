@@ -8,6 +8,7 @@
   --sections-background-color: #e5e5e5;
   --section-team-background-color: #f5f4fa;
   --border-color: rgba(238, 238, 238, 1);
+  --footer-bg-color: #2f303a;
 }
 
 /* Загальні стилі для боді і списків */
@@ -37,7 +38,7 @@ ul {
 /* Стилі контейнера */
 
 .container {
-  outline: 2px solid tomato;
+  outline: 4px solid tomato;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -56,81 +57,11 @@ ul {
   margin-left: auto;
 }
 
-/* .header {
-  background-color: var(--white-text-background-color);
-} */
+.header {
+  outline: 1px solid green;
 
-/* логотип компанії */
-.logo {
-  outline: 2px solid black;
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-
-  color: var(--logo-color);
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1.17;
-}
-
-.logo:focus {
-  color: var(--interactive-color);
-}
-
-.logo-part {
-  color: var(--interactive-color);
-}
-
-/* Навігація сайту */
-.nav-list .link {
-  outline: 2px solid violet;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--headers-color);
-  background-color: var(--white-text-background-color);
-  font-family: inherit;
-  text-decoration: none;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.17;
-}
-
-.nav-list .link:hover,
-.nav-list .link:focus {
-  color: var(--interactive-color);
-}
-
-.nav-list .link.current {
-  color: var(--interactive-color);
-}
-
-/* контактна інфо */
-.contacts-list .link {
-  outline: 2px solid yellow;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--text-color);
-  background-color: var(--white-text-background-color);
-  font-family: inherit;
-  text-decoration: none;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.17;
-}
-
-.contacts-list .link:hover,
-.contacts-list .link:focus {
-  color: var(--interactive-color);
+  /* width: 1600px;
+  background-color: var(--white-text-background-color); */
 }
 
 .contacts-list .item + .item {
@@ -157,7 +88,78 @@ ul {
   margin-right: 50px;
 }
 
+/* логотип компанії */
+.logo {
+  display: block;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: var(--logo-color);
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+.logo:focus {
+  color: var(--interactive-color);
+}
+
+.logo-part {
+  color: var(--interactive-color);
+}
+
+/* Навігація сайту */
+.nav-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--headers-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--interactive-color);
+}
+
+.nav-list .link.current {
+  color: var(--interactive-color);
+}
+
+/* контактна інфо */
+.contacts-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--interactive-color);
+}
+
 /* section Hero */
+
 .hero-title {
   color: var(--white-text-background-color);
   background-color: #2f303a;
@@ -257,10 +259,30 @@ ul {
 
 /* footer */
 .footer {
-  background-color: #2f303a;
+  outline: 3px solid red;
+  background-color: var(--footer-bg-color);
+
+  /* width: 1600px;
+  height: 252px; */
+}
+
+.basement,
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.address-text,
+.footer-list {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-logo {
+  display: block;
+  padding-top: 58px;
+
   color: var(--white-text-background-color);
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
@@ -279,6 +301,8 @@ ul {
 }
 
 .address-text {
+  margin-top: 22px;
+
   color: var(--white-text-background-color);
   font-family: inherit;
   text-decoration: none;
@@ -288,8 +312,14 @@ ul {
   line-height: 1.7;
 }
 
-.contacts-list .item {
-  margin-right: auto;
+.footer-list {
+  margin-top: 9px;
+}
+
+.contacts-list-item {
+  display: block;
+  padding-top: 9px;
+
   color: var(--white-text-color-06);
   font-family: inherit;
   text-decoration: none;
