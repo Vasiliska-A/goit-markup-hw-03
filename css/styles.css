@@ -9,6 +9,7 @@
   --section-team-background-color: #f5f4fa;
   --border-color: rgba(238, 238, 238, 1);
   --footer-bg-color: #2f303a;
+  --card-set-gap: 30px;
 }
 
 /* Загальні стилі для боді і списків */
@@ -18,6 +19,12 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Заховати заголовок */
@@ -90,16 +97,16 @@ ul {
 
 /* логотип компанії */
 .logo {
+  display: block;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   font-weight: 700;
   font-style: normal;
   font-size: 26px;
-  line-height: 1.17;
+  line-height: 1.1738;
 }
 
 .top {
-  display: block;
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -216,6 +223,11 @@ ul {
 
 /* Секція Features */
 
+.features {
+  padding-top: 89px;
+  padding-bottom: 95px;
+}
+
 .features-list,
 .item-title,
 .item-text {
@@ -225,9 +237,23 @@ ul {
 
 .features-list {
   display: flex;
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 
+.features-item {
+  margin-left: var(--card-set-gap);
+}
+
+.features-item {
+  outline: 1px solid teal;
+  width: calc((100% - 120px) / 4);
+}
+
+/* flex-basis: calc(100% / 4 - var(--card-set-gap)); */
+
 .item-title {
+  margin-bottom: 10px;
+
   color: var(--headers-color);
   background-color: var(--white-text-background-color);
   font-family: inherit;
@@ -235,6 +261,7 @@ ul {
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
+  text-transform: uppercase;
 }
 
 .item-text {
@@ -247,7 +274,14 @@ ul {
   line-height: 1.71;
 }
 
+/* Секція "Наші роботи" */
+.examples {
+  padding-bottom: 95px;
+}
+
 .examples-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--headers-color);
   background-color: var(--white-text-background-color);
   font-family: inherit;
@@ -255,13 +289,50 @@ ul {
   font-style: normal;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 
+.card-thumb {
+  outline: 2px solid red;
+  margin-right: 30px;
+}
+
+.examples-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: -30px;
+  padding: 0;
+}
+
+/* Секція Наша команда */
+
 .team-section {
-  background-color: var(--sections-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--section-team-background-color);
+}
+
+.team-section-list {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: calc(-1 * var(--card-set-gap));
+}
+
+.section-list {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-right: var(--card-set-gap);
 }
 
 .team-section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--headers-color);
   background-color: var(--section-team-background-color);
   font-family: inherit;
@@ -269,9 +340,13 @@ ul {
   font-style: normal;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 
 .section-list-title {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
   color: var(--headers-color);
   background-color: var(--white-text-background-color);
   font-family: inherit;
@@ -279,22 +354,32 @@ ul {
   font-style: normal;
   font-size: 16px;
   line-height: 1.17;
+  text-align: center;
 }
 
 .section-list-text {
-  color: var(--text-colorcolor);
+  margin: 0;
+  padding-bottom: 30px;
+  color: var(--text-color);
   background-color: var(--white-text-background-color);
   font-family: inherit;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
   line-height: 1.17;
+  text-align: center;
 }
 
 /* footer */
 .footer {
   outline: 3px solid red;
   background-color: var(--footer-bg-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.address {
+  margin-right: auto;
 }
 
 .address-text,
@@ -304,14 +389,11 @@ ul {
 }
 
 .bottom {
-  display: block;
-  padding-top: 58px;
-
   color: var(--white-text-background-color);
 }
 
 .address-text {
-  margin-top: 22px;
+  margin-top: 20px;
 
   color: var(--white-text-background-color);
   font-family: inherit;
@@ -322,13 +404,9 @@ ul {
   line-height: 1.7;
 }
 
-.footer-list {
-  margin-top: 9px;
-}
-
 .contacts-list-item {
   display: block;
-  padding-top: 9px;
+  margin-top: 9px;
 
   color: var(--white-text-color-06);
   font-family: inherit;
@@ -336,7 +414,7 @@ ul {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.714;
 }
 
 .contacts-list-item:hover,
