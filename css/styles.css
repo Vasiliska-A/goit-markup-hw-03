@@ -90,18 +90,21 @@ ul {
 
 /* логотип компанії */
 .logo {
-  display: block;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-
-  color: var(--logo-color);
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   font-weight: 700;
   font-style: normal;
   font-size: 26px;
   line-height: 1.17;
+}
+
+.top {
+  display: block;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: var(--logo-color);
 }
 
 .logo:focus {
@@ -285,16 +288,6 @@ ul {
 .footer {
   outline: 3px solid red;
   background-color: var(--footer-bg-color);
-
-  /* width: 1600px;
-  height: 252px; */
-}
-
-.basement,
-.address {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .address-text,
@@ -303,25 +296,11 @@ ul {
   padding: 0;
 }
 
-.footer-logo {
+.bottom {
   display: block;
   padding-top: 58px;
 
   color: var(--white-text-background-color);
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1.17;
-}
-
-.footer-logo:focus {
-  color: var(--interactive-color);
-}
-
-.logo-part {
-  color: var(--interactive-color);
 }
 
 .address-text {
