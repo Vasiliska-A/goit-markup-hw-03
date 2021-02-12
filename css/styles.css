@@ -174,7 +174,7 @@ ul {
 
 .hero-title {
   outline: 5px solid yellowgreen;
-  max-width: 696px;
+  min-width: 696px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -214,11 +214,18 @@ ul {
   color: var(--headers-color);
 }
 
-/* section features
-.features,
-.examles {
-  background-color: var(--sections-background-color);
-} */
+/* Секція Features */
+
+.features-list,
+.item-title,
+.item-text {
+  margin: 0;
+  padding: 0;
+}
+
+.features-list {
+  display: flex;
+}
 
 .item-title {
   color: var(--headers-color);
