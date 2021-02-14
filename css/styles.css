@@ -449,7 +449,9 @@ img {
 
 .btn:hover,
 .btn:focus {
-  color: var(--interactive-color);
+  color: var(--white-text-background-color);
+  background-color: var(--interactive-color);
+  outline: none;
 }
 
 .projects {
